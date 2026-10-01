@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#7B5CBF">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>My Story Shelf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="app">
+<div class="phone-frame">
+
+  <!-- SCREEN 1: SPLASH -->
+  <div id="screen-splash" class="screen active">
+    <span class="splash-star" style="top:8%;left:14%;font-size:18px;animation-delay:0s">⭐</span>
+    <span class="splash-star" style="top:4%;right:18%;font-size:14px;animation-delay:0.5s">✨</span>
+    <span class="splash-star" style="top:22%;left:7%;font-size:16px;animation-delay:1s">⭐</span>
+    <span class="splash-star" style="top:14%;right:9%;font-size:12px;animation-delay:0.3s">✨</span>
+    <span class="splash-star" style="top:32%;right:22%;font-size:14px;animation-delay:0.8s">⭐</span>
+    <span class="splash-star" style="top:6%;left:42%;font-size:20px;animation-delay:1.2s">🌟</span>
+    <span class="splash-star" style="top:38%;left:4%;font-size:28px;animation-delay:0.2s">🌕</span>
+    <div>
+      <div class="splash-logo"><h1>My Story<br>Shelf</h1></div>
+      <p class="splash-sub">Big Stories for Little Dreamers</p>
+    </div>
+    <div class="splash-illus">🧒📖🐶</div>
+    <button class="btn-pill btn-pink" id="splash-btn" onclick="App.init()" style="position:relative;z-index:1;">
+      Let's Begin &nbsp;→
+    </button>
+  </div>
+
+  <!-- SCREEN 2: ENTER NAME -->
+  <div id="screen-name" class="screen">
+    <div class="big-illus">🧒👋</div>
+    <h2>Hi there! 👋</h2>
+    <p>What's your name?</p>
+    <input class="name-input" id="name-input" type="text" placeholder="Type your name here…"
+           autocomplete="off" aria-label="Enter your name">
+    <div class="name-bubble" id="name-bubble">
+      Nice to meet you, <span id="name-span" style="color:var(--pink)"></span>! 🎉
+    </div>
+    <div class="spacer"></div>
+    <button class="btn-pill btn-pink" id="name-btn" disabled aria-label="Continue">
+      Let's Go! &nbsp;→
+    </button>
+  </div>
+
+  <!-- SCREEN 3: CHOOSE CHARACTER -->
+  <div id="screen-character" class="screen">
+    <h2>Choose Your Reading Buddy 🐾</h2>
+    <p>Pick a friend for all your adventures!</p>
+    <div class="char-grid">
+      <div class="char-card" data-name="Puppy" role="button" aria-label="Choose Puppy"><div class="ce">🐶</div><div class="cn">Puppy</div></div>
+      <div class="char-card" data-name="Bunny" role="button" aria-label="Choose Bunny"><div class="ce">🐰</div><div class="cn">Bunny</div></div>
+      <div class="char-card" data-name="Kitty" role="button" aria-label="Choose Kitty"><div class="ce">🐱</div><div class="cn">Kitty</div></div>
+      <div class="char-card" data-name="Panda" role="button" aria-label="Choose Panda"><div class="ce">🐼</div><div class="cn">Panda</div></div>
+      <div class="char-card" data-name="Fox"   role="button" aria-label="Choose Fox"  ><div class="ce">🦊</div><div class="cn">Fox</div></div>
+      <div class="char-card" data-name="Unicorn" role="button" aria-label="Choose Unicorn"><div class="ce">🦄</div><div class="cn">Unicorn</div></div>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn-pill btn-pink" id="char-btn" disabled aria-label="Start reading">
+      Let's Read Together! &nbsp;→
+    </button>
+  </div>
+
+  <!-- SCREEN 4: HOME -->
+  <div id="screen-home" class="screen">
+    <div class="scroll">
+      <div class="home-hero">
+        <div class="home-top">
+          <div class="home-greet">
+            <h3 id="home-greeting">Good Morning, Friend! ☀️</h3>
+            <p>Ready for a new story today?</p>
+          </div>
+          <button class="settings-btn" onclick="App.go('parent')" aria-label="Parent area">⚙️</button>
+        </div>
+        <div class="home-buddy" id="home-buddy" aria-hidden="true">🐶</div>
+      </div>
+      <div class="home-body">
+        <div class="cont-card" id="continue-card" style="display:none" role="button" aria-label="Continue reading">
+          <div class="cont-icon">📖</div>
+          <div class="cont-text">
+            <div class="cont-label">Continue Reading</div>
+            <div class="cont-title" id="cont-title">—</div>
+            <div class="cont-sub"   id="cont-sub">—</div>
+          </div>
+          <div class="cont-arr">›</div>
+        </div>
+        <div class="home-row">
+          <button class="home-btn hb-orange" onclick="App.go('categories')" aria-label="All stories">
+            <span class="home-btn-icon">📚</span>All Stories
+          </button>
+          <button class="home-btn hb-green" onclick="App.go('mybooks')" aria-label="My books">
+            <span class="home-btn-icon">❤️</span>My Books
+          </button>
+        </div>
+        <div class="section-label">Story Worlds</div>
+        <div class="world-grid">
+          <div class="world-card" style="background:linear-gradient(135deg,#FF8C42,#E65C00)" onclick="App.go('storylist',{category:'animals'})" role="button" aria-label="Animal Land">
+            <div class="wi">🦁</div><div class="wn">Animal Land</div>
+          </div>
+          <div class="world-card" style="background:linear-gradient(135deg,#9B59B6,#6C3483)" onclick="App.go('storylist',{category:'fairytales'})" role="button" aria-label="Fairy Tales">
+            <div class="wi">🧚</div><div class="wn">Fairy Tales</div>
+          </div>
+          <div class="world-card" style="background:linear-gradient(135deg,#4A90E2,#1A5276)" onclick="App.go('storylist',{category:'adventure'})" role="button" aria-label="Adventure Land">
+            <div class="wi">🗺️</div><div class="wn">Adventure</div>
+          </div>
+          <div class="world-card" style="background:linear-gradient(135deg,#2C3E50,#1A252F)" onclick="App.go('bedtime')" role="button" aria-label="Bedtime Stories">
+            <div class="wi">🌙</div><div class="wn">Bedtime</div>
+          </div>
+        </div>
+        <div style="height:20px"></div>
+      </div>
+    </div>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item on" id="nav-home" onclick="App.go('home')" aria-label="Home">
+        <span class="nav-icon">🏠</span><span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" id="nav-stories" onclick="App.go('categories')" aria-label="Stories">
+        <span class="nav-icon">📚</span><span class="nav-label">Stories</span>
+      </button>
+      <button class="nav-item" id="nav-play" onclick="App.go('play')" aria-label="Play">
+        <span class="nav-icon">🎮</span><span class="nav-label">Play</span>
+      </button>
+      <button class="nav-item" id="nav-mybooks" onclick="App.go('mybooks')" aria-label="My Books">
+        <span class="nav-icon">❤️</span><span class="nav-label">My Books</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- SCREEN 5: STORY CATEGORIES -->
+  <div id="screen-categories" class="screen">
+    <div class="scroll">
+      <div class="cat-head">
+        <button class="back-btn" onclick="App.go('home')" aria-label="Back">‹</button>
+        <h2>Choose a Story World</h2>
+        <p>Where would you like to go today?</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card" data-cat="animals"    style="background:linear-gradient(135deg,#FF8C42,#E65C00)">
+          <span class="cat-icon">🦁</span><div class="cat-name">Animal Land</div><div class="cat-count">0 stories</div>
+        </div>
+        <div class="cat-card" data-cat="fairytales" style="background:linear-gradient(135deg,#9B59B6,#6C3483)">
+          <span class="cat-icon">🧚</span><div class="cat-name">Fairy Tales</div><div class="cat-count">0 stories</div>
+        </div>
+        <div class="cat-card" data-cat="adventure"  style="background:linear-gradient(135deg,#3498DB,#1A6093)">
+          <span class="cat-icon">🗺️</span><div class="cat-name">Adventure Land</div><div class="cat-count">0 stories</div>
+        </div>
+        <div class="cat-card" data-cat="space"      style="background:linear-gradient(135deg,#1A237E,#0D47A1)">
+          <span class="cat-icon">🚀</span><div class="cat-name">Space Explorer</div><div class="cat-count">0 stories</div>
+        </div>
+        <div class="cat-card" data-cat="ocean"      style="background:linear-gradient(135deg,#00BCD4,#00838F)">
+          <span class="cat-icon">🌊</span><div class="cat-name">Ocean Deep</div><div class="cat-count">0 stories</div>
+        </div>
+        <div class="cat-card" data-cat="bedtime"    style="background:linear-gradient(135deg,#2C3E50,#0F1923)">
+          <span class="cat-icon">🌙</span><div class="cat-name">Bedtime Stories</div><div class="cat-count">0 stories</div>
+        </div>
+      </div>
+    </div>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item" id="nav-home2"    onclick="App.go('home')"       aria-label="Home"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></button>
+      <button class="nav-item on" id="nav-stories2" onclick="App.go('categories')" aria-label="Stories"><span class="nav-icon">📚</span><span class="nav-label">Stories</span></button>
+      <button class="nav-item"    onclick="App.go('play')"       aria-label="Play"><span class="nav-icon">🎮</span><span class="nav-label">Play</span></button>
+      <button class="nav-item"    onclick="App.go('mybooks')"    aria-label="My Books"><span class="nav-icon">❤️</span><span class="nav-label">My Books</span></button>
+    </nav>
+  </div>
+
+  <!-- SCREEN 6: STORY LIST -->
+  <div id="screen-storylist" class="screen">
+    <div class="scroll">
+      <div class="story-list-head">
+        <button class="back-btn" onclick="App.go('categories')" aria-label="Back">‹</button>
+        <h2 id="storylist-title">Stories</h2>
+        <p id="storylist-desc"></p>
+      </div>
+      <div id="story-list-container"></div>
+    </div>
+  </div>
+
+  <!-- SCREEN 7: READING -->
+  <div id="screen-reading" class="screen">
+    <div class="scroll">
+      <div class="read-header">
+        <button class="back-btn" onclick="App.go('storylist',{category:App.currentCategory||'animals'})" aria-label="Back">‹</button>
+        <div class="read-title-bar">
+          <div class="read-story-name" id="reading-story-name"></div>
+          <div class="read-page-num"   id="reading-page-num"></div>
+        </div>
+        <button id="reading-fav-btn" style="background:none;border:none;font-size:26px;cursor:pointer;min-width:44px;min-height:44px;" aria-label="Favourite">🤍</button>
+      </div>
+      <div class="font-controls">
+        <button class="font-btn" id="font-decrease" aria-label="Decrease font size">A-</button>
+        <span class="font-label">Font</span>
+        <button class="font-btn" id="font-increase" aria-label="Increase font size">A+</button>
+      </div>
+      <div class="read-illus" id="reading-illus" aria-hidden="true">📖</div>
+      <p class="read-text" id="reading-text"></p>
+      <div class="read-progress-bar">
+        <div class="read-progress-fill" id="reading-progress-fill" style="width:0%"></div>
+      </div>
+      <div class="page-nav">
+        <button class="page-btn" id="prev-page-btn" aria-label="Previous page">‹</button>
+        <span class="page-info" id="page-info-label" aria-live="polite"></span>
+        <button class="page-btn" id="next-page-btn" aria-label="Next page">›</button>
+      </div>
+      <div class="read-btns">
+        <button class="read-btn rb-pink" id="read-to-me-btn" aria-label="Read to me">🔊 Read to Me</button>
+        <button class="read-btn rb-blue" id="i-can-read-btn" aria-label="I can read">📖 I Can Read</button>
+      </div>
+      <div class="tts-controls" id="tts-controls">
+        <span>Speed:</span>
+        <input type="range" id="tts-speed" min="0.5" max="2" step="0.25" value="1" aria-label="Reading speed">
+        <span id="tts-speed-label">1×</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 8: STORY COMPLETED -->
+  <div id="screen-completed" class="screen">
+    <span class="confetti-piece" style="left:8%;animation-delay:0s">🎉</span>
+    <span class="confetti-piece" style="left:25%;animation-delay:0.4s">⭐</span>
+    <span class="confetti-piece" style="left:55%;animation-delay:0.8s">🎊</span>
+    <span class="confetti-piece" style="left:75%;animation-delay:1.2s">✨</span>
+    <span class="confetti-piece" style="left:43%;animation-delay:1.6s">🌟</span>
+    <div class="done-yay">🎉</div>
+    <div class="done-title">You finished the story!</div>
+    <div class="done-sub" id="completed-sub">Amazing reading! ⭐</div>
+    <div class="done-card">
+      <div class="done-book-icon" id="completed-emoji">📖</div>
+      <div class="done-book-info">
+        <div class="done-book-title" id="completed-story-title">—</div>
+        <div class="done-badge" id="completed-badge">Super Reader! 🏆</div>
+      </div>
+    </div>
+    <div class="rating-stars" id="rating-stars" aria-label="Rate this story"></div>
+    <div class="done-btns">
+      <button class="btn-pill btn-pink"  id="read-again-btn"    aria-label="Read again">Read Again</button>
+      <button class="btn-pill btn-white" id="completed-home-btn" aria-label="Back to home">Back to Home</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 9: PLAY -->
+  <div id="screen-play" class="screen">
+    <div class="scroll">
+      <div class="play-head">
+        <button class="back-btn" onclick="App.go('home')" aria-label="Back">‹</button>
+        <h2>Let's Play! 🎮</h2>
+        <p>Fun games to learn and explore</p>
+      </div>
+      <div class="game-grid">
+        <div class="game-card" onclick="Games.openGame('puzzle')"      role="button" aria-label="Story Puzzles">
+          <span class="game-icon">🧩</span><div class="game-name">Puzzles</div>
+        </div>
+        <div class="game-card" onclick="Games.openGame('wordgame')"    role="button" aria-label="Word Game">
+          <span class="game-icon">🔤</span><div class="game-name">Word Game</div>
+        </div>
+        <div class="game-card" onclick="Games.openGame('colouring')"   role="button" aria-label="Colouring Studio">
+          <span class="game-icon">🎨</span><div class="game-name">Colouring</div>
+        </div>
+        <div class="game-card" onclick="Games.openGame('memory')"      role="button" aria-label="Memory Cards">
+          <span class="game-icon">🃏</span><div class="game-name">Memory Cards</div>
+        </div>
+        <div class="game-card" onclick="Games.openGame('findobject')"  role="button" aria-label="Find the Object">
+          <span class="game-icon">🔍</span><div class="game-name">Find the Object</div>
+        </div>
+        <div class="game-card" onclick="Games.openGame('math')"        role="button" aria-label="Math Fun">
+          <span class="game-icon">🔢</span><div class="game-name">Math Fun</div>
+        </div>
+      </div>
+    </div>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item"    onclick="App.go('home')"       aria-label="Home"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></button>
+      <button class="nav-item"    onclick="App.go('categories')" aria-label="Stories"><span class="nav-icon">📚</span><span class="nav-label">Stories</span></button>
+      <button class="nav-item on" onclick="App.go('play')"       aria-label="Play"><span class="nav-icon">🎮</span><span class="nav-label">Play</span></button>
+      <button class="nav-item"    onclick="App.go('mybooks')"    aria-label="My Books"><span class="nav-icon">❤️</span><span class="nav-label">My Books</span></button>
+    </nav>
+
+    <!-- Game: Word Game -->
+    <div class="game-screen" id="game-wordgame">
+      <div class="game-header">
+        <button class="back-btn" onclick="Games.closeGame()" aria-label="Close game">‹</button>
+        <h2>Word Game 🔤</h2>
+        <span class="game-score" id="wg-score">1 / 10</span>
+      </div>
+      <div class="game-content" style="text-align:center">
+        <div style="font-size:14px;color:var(--muted);margin-bottom:8px">Unscramble the word</div>
+        <div class="wg-word" id="wg-hint"></div>
+        <div class="answer-slots" id="wg-slots"></div>
+        <div class="letter-bank" id="wg-bank"></div>
+        <div id="wg-feedback" style="font-size:20px;font-weight:800;min-height:32px;margin-top:8px"></div>
+      </div>
+    </div>
+
+    <!-- Game: Memory Cards -->
+    <div class="game-screen" id="game-memory">
+      <div class="game-header">
+        <button class="back-btn" onclick="Games.closeGame()" aria-label="Close game">‹</button>
+        <h2>Memory Cards 🃏</h2>
+        <span class="game-score" id="memory-flips">Flips: 0</span>
+      </div>
+      <div class="game-content">
+        <div class="memory-grid" id="memory-grid"></div>
+        <div id="memory-result" style="text-align:center;font-size:20px;font-weight:800;color:var(--purple);margin-top:16px"></div>
+      </div>
+    </div>
+
+    <!-- Game: Math Fun -->
+    <div class="game-screen" id="game-math">
+      <div class="game-header">
+        <button class="back-btn" onclick="Games.closeGame()" aria-label="Close game">‹</button>
+        <h2>Math Fun 🔢</h2>
+        <span class="game-score" id="math-score-label">Score: 0</span>
+      </div>
+      <div class="game-content" style="text-align:center">
+        <div id="math-progress" style="font-size:13px;color:var(--muted);margin-bottom:8px"></div>
+        <div class="math-question" id="math-question">2 + 3 = ?</div>
+        <div class="math-choices" id="math-choices"></div>
+      </div>
+    </div>
+
+    <!-- Game: Colouring Studio -->
+    <div class="game-screen" id="game-colouring">
+      <div class="game-header">
+        <button class="back-btn" onclick="Games.closeGame()" aria-label="Close game">‹</button>
+        <h2>Colouring Studio 🎨</h2>
+      </div>
+      <div class="game-content" style="text-align:center">
+        <div class="color-palette" id="colour-palette"></div>
+        <canvas id="colour-canvas" class="coloring-canvas" width="300" height="360" style="max-width:100%;touch-action:none"></canvas>
+        <div style="display:flex;gap:12px;margin-top:14px;justify-content:center">
+          <button class="btn-pill btn-purple" id="colour-next-btn" style="width:auto;padding:12px 24px;font-size:15px" aria-label="Next animal">Next 🐾</button>
+          <button class="btn-pill btn-orange" id="colour-save-btn" style="width:auto;padding:12px 24px;font-size:15px" aria-label="Save drawing">Save 💾</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game: Find the Object -->
+    <div class="game-screen" id="game-findobject">
+      <div class="game-header">
+        <button class="back-btn" onclick="Games.closeGame()" aria-label="Close game">‹</button>
+        <h2>Find the Object 🔍</h2>
+        <span class="game-score" id="fo-score">0 / 5</span>
+      </div>
+      <div class="game-content" style="text-align:center">
+        <div id="fo-instruction" style="font-size:22px;font-weight:800;color:var(--dark);margin-bottom:16px"></div>
+        <div id="fo-scene" style="display:flex;flex-wrap:wrap;gap:4px;justify-content:center;max-width:320px;margin:0 auto"></div>
+        <div id="fo-feedback" style="font-size:20px;font-weight:800;margin-top:12px;min-height:32px"></div>
+      </div>
+    </div>
+
+    <!-- Game: Puzzles -->
+    <div class="game-screen" id="game-puzzle">
+      <div class="game-header">
+        <button class="back-btn" onclick="Games.closeGame()" aria-label="Close game">‹</button>
+        <h2>Story Puzzles 🧩</h2>
+        <span class="game-score" id="puzzle-moves">Moves: 0</span>
+      </div>
+      <div class="game-content" style="text-align:center">
+        <div id="puzzle-grid"></div>
+        <div id="puzzle-result" style="font-size:20px;font-weight:800;color:var(--purple);margin-top:12px"></div>
+        <button class="btn-pill btn-purple" onclick="Games.puzzle.start()" style="margin-top:16px;max-width:200px" aria-label="New puzzle">New Puzzle</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 10: MY BOOKS -->
+  <div id="screen-mybooks" class="screen">
+    <div class="scroll">
+      <div class="mybooks-head">
+        <button class="back-btn" onclick="App.go('home')" aria-label="Back">‹</button>
+        <h2>My Books 📚</h2>
+      </div>
+      <div class="tabs" id="mybooks-tabs" role="tablist">
+        <button class="tab on" data-tab="reading"    role="tab" aria-selected="true">📖 Reading</button>
+        <button class="tab"    data-tab="finished"   role="tab" aria-selected="false">✅ Finished</button>
+        <button class="tab"    data-tab="favourites" role="tab" aria-selected="false">❤️ Loved</button>
+      </div>
+      <div id="mybooks-list"></div>
+    </div>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item"    onclick="App.go('home')"       aria-label="Home"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></button>
+      <button class="nav-item"    onclick="App.go('categories')" aria-label="Stories"><span class="nav-icon">📚</span><span class="nav-label">Stories</span></button>
+      <button class="nav-item"    onclick="App.go('play')"       aria-label="Play"><span class="nav-icon">🎮</span><span class="nav-label">Play</span></button>
+      <button class="nav-item on" onclick="App.go('mybooks')"    aria-label="My Books"><span class="nav-icon">❤️</span><span class="nav-label">My Books</span></button>
+    </nav>
+  </div>
+
+  <!-- SCREEN 11: PARENT AREA -->
+  <div id="screen-parent" class="screen">
+    <div class="scroll">
+      <div class="parent-head">
+        <button class="back-btn" onclick="App.go('home')" aria-label="Back">‹</button>
+      </div>
+      <div class="pin-section" id="parent-pin-section">
+        <div class="parent-lock" aria-hidden="true">🔒</div>
+        <div class="parent-title">Parent Area</div>
+        <div class="parent-sub">Enter the 4-digit code to continue</div>
+        <div class="parent-error" id="parent-error" role="alert">Wrong PIN — try again!</div>
+        <div class="pin-dots" id="pin-dots-container">
+          <div class="pin-dot" id="pd1"></div>
+          <div class="pin-dot" id="pd2"></div>
+          <div class="pin-dot" id="pd3"></div>
+          <div class="pin-dot" id="pd4"></div>
+        </div>
+        <div class="pin-pad" role="group" aria-label="PIN pad">
+          <button class="pin-key" onclick="ParentScreen.addDigit(1)" aria-label="1">1</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(2)" aria-label="2">2</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(3)" aria-label="3">3</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(4)" aria-label="4">4</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(5)" aria-label="5">5</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(6)" aria-label="6">6</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(7)" aria-label="7">7</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(8)" aria-label="8">8</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit(9)" aria-label="9">9</button>
+          <div class="pin-key pin-empty"></div>
+          <button class="pin-key" onclick="ParentScreen.addDigit(0)" aria-label="0">0</button>
+          <button class="pin-key" onclick="ParentScreen.addDigit('del')" aria-label="Delete">⌫</button>
+        </div>
+        <p style="font-size:12px;color:var(--muted);margin-top:16px">Default PIN: 1234</p>
+      </div>
+      <div class="parent-dashboard" id="parent-dashboard">
+        <div class="section-label" id="pstat-name">Reading Stats</div>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-num" id="pstat-total">0</div>
+            <div class="stat-desc">Stories Read</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" id="pstat-fin">0</div>
+            <div class="stat-desc">Completed</div>
+          </div>
+          <div class="stat-card" style="grid-column:1/-1">
+            <div style="font-size:14px;font-weight:700;color:var(--muted)">Last Read</div>
+            <div style="font-size:18px;font-weight:800;color:var(--purple);margin-top:4px" id="pstat-last">—</div>
+          </div>
+        </div>
+        <div class="section-label">Reading History</div>
+        <div id="parent-history"></div>
+        <div class="section-label" style="margin-top:20px">Settings</div>
+        <div class="parent-setting">
+          <span>Change PIN</span>
+          <button onclick="ParentScreen.changePin()" aria-label="Change PIN">Change</button>
+        </div>
+        <div class="parent-setting">
+          <span>Reading Level</span>
+          <select id="reading-level-sel" aria-label="Reading level"
+            onchange="Storage.set('readingLevel',this.value)"
+            style="font-family:Nunito,sans-serif;font-size:14px;font-weight:700;border:none;color:var(--purple);background:none;cursor:pointer">
+            <option value="beginner">Beginner ⭐</option>
+            <option value="explorer" selected>Explorer ⭐⭐</option>
+            <option value="champion">Champion ⭐⭐⭐</option>
+          </select>
+        </div>
+        <button class="danger-btn" onclick="ParentScreen.resetData()" aria-label="Reset all data">
+          🗑️ Reset All App Data
+        </button>
+        <div style="text-align:center;padding:20px 0;color:var(--muted);font-size:13px">
+          My Story Shelf — Made with ❤️ for young readers
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN 12: BEDTIME -->
+  <div id="screen-bedtime" class="screen">
+    <span class="bt-star" style="top:10%;left:12%;font-size:14px;animation-delay:0s">✦</span>
+    <span class="bt-star" style="top:6%;right:16%;font-size:20px;animation-delay:0.5s">✦</span>
+    <span class="bt-star" style="top:22%;left:28%;font-size:11px;animation-delay:1s">✦</span>
+    <span class="bt-star" style="top:16%;right:10%;font-size:16px;animation-delay:0.3s">✦</span>
+    <span class="bt-star" style="top:9%;left:52%;font-size:22px;animation-delay:0.2s;color:#FFD700">🌕</span>
+    <div style="width:100%;text-align:left;position:relative;z-index:1">
+      <button class="back-btn bt-back" onclick="App.go('home')" aria-label="Back">‹</button>
+    </div>
+    <div style="position:relative;z-index:1;text-align:center">
+      <div class="bt-moon">🌙</div>
+      <div class="bt-h2">Time for a cozy story?</div>
+      <div class="bt-p">Good night, <span class="bt-name" id="bedtime-name">Friend</span>! 😴</div>
+    </div>
+    <div class="bt-illus">😴🐻</div>
+    <div class="bt-btns">
+      <button class="btn-pill btn-pink" onclick="App.go('storylist',{category:'bedtime'})" aria-label="Read a bedtime story">
+        🌙 Read a Bedtime Story
+      </button>
+      <button class="btn-pill btn-white" onclick="App.go('home')" aria-label="Back to home">
+        Back to Home
+      </button>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/app.js"></script>
+<script src="js/stories.js"></script>
+<script src="js/games.js"></script>
+</body>
+</html>
