@@ -1,0 +1,237 @@
+{
+  "stories": [
+    {
+      "id": "story_001",
+      "title": "The Brave Little Puppy",
+      "category": "animals",
+      "difficulty": "easy",
+      "ageMin": 3, "ageMax": 6,
+      "emoji": "🐶",
+      "color": "#52C967",
+      "totalPages": 6,
+      "completionBadge": "Animal Explorer 🐾",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🐶", "illustrationBg": "#E8F5E9", "text": "Once upon a time, there was a little puppy named Max. He lived in a cozy red house at the end of a sunny street. Max had big brown eyes, floppy ears, and a tail that never stopped wagging. Every morning, Max would stand at the garden gate and look at the big world beyond. 'One day,' he would say, 'I am going to go on a great adventure!'" },
+        { "pageNum": 2, "illustration": "🦋", "illustrationBg": "#F1F8E9", "text": "One bright morning, a beautiful blue butterfly danced past Max's nose. It flew over the gate and into the meadow beyond. Max's heart beat fast — this was his moment! He squeezed under the gate and followed the butterfly through the tall green grass. The flowers smelled wonderful and the sun was warm on his fur. But when Max looked back, the house was gone from sight." },
+        { "pageNum": 3, "illustration": "🌳", "illustrationBg": "#E8F5E9", "text": "Max stopped walking. The meadow looked the same in every direction — trees, flowers, and buzzing bees. His tail drooped a little. 'I might be lost,' he said quietly. But then Max remembered what his mother had told him: 'When you feel scared, take a big breath and think carefully.' Max sat down, took three big breaths, and looked around very slowly." },
+        { "pageNum": 4, "illustration": "💧", "illustrationBg": "#E3F2FD", "text": "Max noticed something sparkly through the trees — a little stream! He remembered that streams lead to bigger rivers, and rivers lead to towns where people live. Max trotted happily along the bank of the stream. He found a friendly frog sitting on a stone. 'Which way to the red house?' asked Max. The frog pointed with a long green toe. 'That way, little puppy!'" },
+        { "pageNum": 5, "illustration": "🏠", "illustrationBg": "#FFF9C4", "text": "Max followed the frog's directions and ran as fast as his little legs could carry him. The grass got shorter and he could smell something wonderful — his own home! There was the red house at the end of the sunny street. His family was standing at the gate, calling his name. Max barked joyfully and ran straight into their arms, his tail wagging like a little helicopter." },
+        { "pageNum": 6, "illustration": "⭐", "illustrationBg": "#FFF8E1", "text": "That evening, Max sat by the fireplace feeling warm and happy. He had gone on an adventure, he had felt scared, and he had found his way home all by himself. 'Being brave doesn't mean you're never afraid,' his mother said softly. 'Being brave means you keep going even when you are.' Max wagged his tail and fell asleep dreaming of his next great adventure." }
+      ]
+    },
+    {
+      "id": "story_002",
+      "title": "The Wise Old Elephant",
+      "category": "animals",
+      "difficulty": "medium",
+      "ageMin": 5, "ageMax": 8,
+      "emoji": "🐘",
+      "color": "#7B5CBF",
+      "totalPages": 5,
+      "completionBadge": "Animal Explorer 🐾",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🐘", "illustrationBg": "#F3E5F5", "text": "On the edge of a great savanna lived the oldest and wisest elephant in the world. Her name was Ella, and she had wrinkles around her eyes that told of a thousand stories. Every animal in the savanna knew to come to Ella when they had a problem. She listened carefully, thought slowly, and always gave the kindest advice." },
+        { "pageNum": 2, "illustration": "🦁", "illustrationBg": "#FFF3E0", "text": "One day, a young lion named Leo came to Ella with his head hanging low. 'Ella,' said Leo, 'the other animals are afraid of me. I roar and they all run away. I try to play but they hide. I am the strongest animal here and yet I have no friends.' Ella listened quietly, her big ears moving gently in the warm breeze." },
+        { "pageNum": 3, "illustration": "💭", "illustrationBg": "#E8EAF6", "text": "Ella thought for a long time. Then she said gently, 'Leo, your roar is powerful. But true strength is not about making others afraid — it is about making others feel safe.' Leo frowned. He had always thought being strong meant being the most powerful. 'How do I make others feel safe?' he asked. Ella smiled warmly. 'Use your strength to help them.'" },
+        { "pageNum": 4, "illustration": "🤝", "illustrationBg": "#E8F5E9", "text": "Leo tried something new. When a little zebra got stuck in the mud, Leo used his strong paws to pull her free. When a family of rabbits was cold, Leo lay nearby to give them warmth. When a bully hyena tried to steal the meerkats' food, Leo stood between them and said calmly, 'That is not kind.' The hyena ran away at once." },
+        { "pageNum": 5, "illustration": "🌟", "illustrationBg": "#FFF8E1", "text": "Word spread across the savanna about the kind lion. Animals began to smile when they saw Leo coming. The little zebra brought him flowers. The rabbits shared their carrots. Leo discovered something magical — having friends felt so much better than being feared. He ran back to Ella and roared — not a scary roar, but a roar full of pure joy. Ella's old eyes sparkled with happiness." }
+      ]
+    },
+    {
+      "id": "story_003",
+      "title": "The Lost Explorer",
+      "category": "adventure",
+      "difficulty": "easy",
+      "ageMin": 4, "ageMax": 7,
+      "emoji": "🗺️",
+      "color": "#FF8C42",
+      "totalPages": 6,
+      "completionBadge": "Brave Explorer 🗺️",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🧭", "illustrationBg": "#FFF3E0", "text": "Sam was seven years old and loved adventure more than anything. On her birthday, she was given a golden compass that pointed toward special things. Sam put the compass in her pocket and set off toward the great Mystery Mountain that everyone in the village could see but nobody had ever climbed." },
+        { "pageNum": 2, "illustration": "⛰️", "illustrationBg": "#ECEFF1", "text": "The path up the mountain was steep and rocky. Sam climbed for hours. She stopped to help a baby bird that had fallen from its nest. She shared her water with a tired old man resting under a tree. She helped a snail across the path so it wouldn't get stepped on. Each time she helped, her compass glowed warmly in her pocket." },
+        { "pageNum": 3, "illustration": "🌫️", "illustrationBg": "#CFD8DC", "text": "Near the top of the mountain, thick fog rolled in. Sam could not see more than a few steps ahead. She held her compass tight, but it spun in circles — even the compass was confused! Sam sat on a rock and waited. While she waited, she heard a sound. Someone else was lost in the fog too, calling out for help." },
+        { "pageNum": 4, "illustration": "👧", "illustrationBg": "#E3F2FD", "text": "Sam followed the sound and found a girl about her age sitting on a ledge, afraid to move. Her name was Priya, and she had also climbed the mountain looking for adventure. Sam took Priya's hand. 'Two explorers are braver than one,' said Sam. Together, they listened to the sounds of the valley — birds, water, wind — and followed them safely down." },
+        { "pageNum": 5, "illustration": "🌈", "illustrationBg": "#E8F5E9", "text": "When the fog lifted, Sam and Priya found themselves at the very top of Mystery Mountain. The view took their breath away — golden valleys, shining rivers, and a rainbow touching the horizon. The compass pointed straight ahead. On a flat stone was carved the words: 'The greatest treasure is the friend you find on the journey.'" },
+        { "pageNum": 6, "illustration": "🤝", "illustrationBg": "#FFF8E1", "text": "Sam and Priya climbed back down the mountain together, laughing and talking all the way. Sam learned that a compass can point you in a direction, but kindness is what leads you to the very best places. And the best treasure she ever found? A true friend named Priya." }
+      ]
+    },
+    {
+      "id": "story_004",
+      "title": "The Mountain of Stars",
+      "category": "adventure",
+      "difficulty": "medium",
+      "ageMin": 5, "ageMax": 9,
+      "emoji": "🏔️",
+      "color": "#FF8C42",
+      "totalPages": 5,
+      "completionBadge": "Brave Explorer 🗺️",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🌌", "illustrationBg": "#1A237E", "text": "High in the farthest mountains, there was a peak so tall it touched the night sky. The people of the valley called it the Mountain of Stars, because on clear nights, you could reach out from the summit and touch the twinkling lights above. A young boy named Arjun had always dreamed of climbing to the top to bring back a star for his grandmother, whose eyes had grown dim." },
+        { "pageNum": 2, "illustration": "🦅", "illustrationBg": "#E8EAF6", "text": "Arjun set out with a warm coat, a lantern, and his grandmother's blessing. The climb was hard. Rocks crumbled underfoot. Wind howled around him. At the halfway point, Arjun found an eagle with an injured wing, trembling in the cold. Though he was tired and his lantern oil was running low, Arjun used his scarf to splint the eagle's wing and sheltered it through the night." },
+        { "pageNum": 3, "illustration": "🌀", "illustrationBg": "#3949AB", "text": "In the morning, the eagle spread its good wing and spoke — for in this story, some eagles can speak. 'You gave your warmth when you needed it most,' said the eagle. 'I will carry you the rest of the way.' Arjun held on tight as the eagle soared through clouds, past waterfalls of frozen mist, and landed on the flat top of the Mountain of Stars." },
+        { "pageNum": 4, "illustration": "⭐", "illustrationBg": "#0D1B5E", "text": "The summit was covered in tiny glowing stones that sparkled like stars. Arjun picked up the most beautiful one — a smooth blue stone that pulsed with soft golden light. 'This is a fallen star,' the eagle said. 'It carries old light. Give it to your grandmother. Old light can bring new sight.' Arjun held it carefully in both hands, hardly daring to breathe." },
+        { "pageNum": 5, "illustration": "👵", "illustrationBg": "#FFF8E1", "text": "When Arjun placed the glowing stone in his grandmother's hands, she held it close to her eyes, and slowly, slowly, a smile broke across her face. 'I can see you clearly again,' she whispered. 'My brave, kind boy.' Arjun hugged her tightly. He had climbed a mountain to find a star — but the real light he had given her was love." }
+      ]
+    },
+    {
+      "id": "story_005",
+      "title": "The Golden Crown",
+      "category": "fairytales",
+      "difficulty": "easy",
+      "ageMin": 4, "ageMax": 7,
+      "emoji": "👑",
+      "color": "#FF6B9D",
+      "totalPages": 6,
+      "completionBadge": "Royal Reader 👑",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "👑", "illustrationBg": "#FFF8E1", "text": "In a kingdom surrounded by silver mountains, there lived a princess named Zara. She was kind and curious, and loved to spend her days in the royal garden talking to flowers and butterflies. The king said that when Zara turned eight, a golden crown would be given to the child who showed the most goodness. Zara wanted that crown very much." },
+        { "pageNum": 2, "illustration": "🌹", "illustrationBg": "#FCE4EC", "text": "Zara began doing good deeds all day long. She helped the cook carry vegetables, she read stories to little children, and she picked flowers for sick villagers. But she always made sure the king was watching. One day, a wise old woman who swept the palace floors said quietly to Zara, 'A good deed done only to be seen is just a performance, my dear.'" },
+        { "pageNum": 3, "illustration": "🌧️", "illustrationBg": "#E3F2FD", "text": "The words stuck in Zara's heart. On a rainy day, when nobody was watching, Zara saw a small cat shivering under a bench. She took off her royal cloak — her most beautiful, most expensive cloak — and wrapped the cat in it. The cloak got muddy and wet. Nobody saw her. Nobody clapped. But Zara felt something warm and glowing inside her chest." },
+        { "pageNum": 4, "illustration": "🏘️", "illustrationBg": "#E8F5E9", "text": "After that day, Zara helped people differently. She helped because she wanted to, not because she wanted a reward. She taught the baker's son to read. She planted a garden so poor families could have vegetables. She sat with a lonely old man and listened to his stories. None of these things did she do when the king was watching." },
+        { "pageNum": 5, "illustration": "🎉", "illustrationBg": "#F3E5F5", "text": "On Zara's eighth birthday, the king called all the children of the kingdom to the palace. He had been watching secretly — watching when Zara thought no one could see. He had seen the muddy cloak, the lonely old man, the vegetable garden. With a smile, he placed the golden crown on Zara's head. 'Not because you were the best,' he said, 'but because you were the most true.'" },
+        { "pageNum": 6, "illustration": "💛", "illustrationBg": "#FFF8E1", "text": "Zara wore the crown, but she never kept it on her head for long. She gave it to children who needed confidence, to elders who deserved respect, and to anyone having a hard day. Because Zara had learned the most important lesson of all: the best crown is not the one on your head — it is the kindness in your heart." }
+      ]
+    },
+    {
+      "id": "story_006",
+      "title": "The Magic Garden",
+      "category": "fairytales",
+      "difficulty": "medium",
+      "ageMin": 5, "ageMax": 8,
+      "emoji": "🌻",
+      "color": "#FF6B9D",
+      "totalPages": 5,
+      "completionBadge": "Royal Reader 👑",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🌱", "illustrationBg": "#E8F5E9", "text": "Beyond the edge of an enchanted forest, there was a garden where nothing grew. The soil was gray, the sky above it was cloudy, and the walls were covered in thorny vines. A fairy named Lily was given a small bag of magical seeds and told: 'These seeds will only grow if planted with something special.' Nobody told Lily what that special thing was." },
+        { "pageNum": 2, "illustration": "💝", "illustrationBg": "#FCE4EC", "text": "Lily tried everything. She poured sunshine from a jar — nothing grew. She sprinkled rainbow dust — still nothing. She sang beautiful songs and danced and blew magic breath over the seeds. The seeds sat in the gray soil and did not move. Lily sat down in the middle of the garden and began to cry, not from selfishness, but from sadness for the garden that could not bloom." },
+        { "pageNum": 3, "illustration": "💧", "illustrationBg": "#E3F2FD", "text": "As Lily's tears fell onto the soil, something happened. A tiny green shoot pushed up through the gray earth. Lily stared. She cried a few more tears — and three more shoots appeared! She realized something remarkable: it was her real feelings, her genuine care for the garden, that was making things grow. She began to tend the garden not with magic, but with true love." },
+        { "pageNum": 4, "illustration": "🌸", "illustrationBg": "#F8BBD9", "text": "Lily watered every seed with patience. When a plant looked weak, she sat beside it and encouraged it with kind words. When two plants crowded each other, she gently made space for both to grow. She talked to the plants about the stars, about the rain, about dreams. Slowly, the garden filled with the most extraordinary flowers — flowers that had never been seen in any other garden anywhere." },
+        { "pageNum": 5, "illustration": "🌈", "illustrationBg": "#F3E5F5", "text": "When the fairy elder came to see the garden, she gasped. 'How did you do this?' she asked. Lily looked at her hands — small, a little muddy, no magic wand in sight. 'I planted each seed with kindness,' said Lily, 'and cared for it with patience. And when things looked hopeless, I loved it anyway.' The fairy elder smiled. 'That is the oldest, most powerful magic there is.'" }
+      ]
+    },
+    {
+      "id": "story_007",
+      "title": "Astronaut Amara",
+      "category": "space",
+      "difficulty": "easy",
+      "ageMin": 4, "ageMax": 7,
+      "emoji": "🚀",
+      "color": "#4A90E2",
+      "totalPages": 6,
+      "completionBadge": "Space Explorer 🚀",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "👩‍🚀", "illustrationBg": "#E8EAF6", "text": "Amara had wanted to be an astronaut ever since she was three years old and saw the moon from her bedroom window. Now she was six, and today was the most exciting day of her life — she was going to space camp! She packed her backpack carefully: a notebook for writing down everything she discovered, a star map, and a picture of her family." },
+        { "pageNum": 2, "illustration": "🔭", "illustrationBg": "#1A237E", "text": "At space camp, Amara met children from all over the world. Some had never seen the stars clearly before. On the first night, the instructor took them all outside to look at the sky. 'Space is so big,' said one boy sadly, 'we are so small.' Amara shook her head. 'We are small,' she said, 'but we have very big minds.'" },
+        { "pageNum": 3, "illustration": "🌍", "illustrationBg": "#1565C0", "text": "On the second day, they went into the astronaut training simulator. It shook and spun and turned everything upside down! Amara felt dizzy and gripped her harness tight. But she didn't give up. She focused on her breathing, like her grandfather had taught her. One breath in. One breath out. By the end, she was guiding the simulated rocket smoothly through the stars." },
+        { "pageNum": 4, "illustration": "🪐", "illustrationBg": "#0D47A1", "text": "In the science lab, they studied Saturn's rings and Jupiter's swirling storms. Amara learned that the Great Red Spot on Jupiter is a storm that has been spinning for hundreds of years. 'That's longer than any person has ever lived!' she wrote in her notebook. She wondered if tiny creatures on other planets were also looking through telescopes, wondering about Earth's storms too." },
+        { "pageNum": 5, "illustration": "🌙", "illustrationBg": "#1A237E", "text": "On the last night of camp, all the children lay on their backs on a grassy hill and looked at the Milky Way stretching above them like a river of light. 'Will we ever really go there?' someone asked. Amara thought about all she had learned — about rockets and planets and the courage of the first astronauts. 'I will,' she said simply, and nobody doubted her." },
+        { "pageNum": 6, "illustration": "⭐", "illustrationBg": "#FFF8E1", "text": "When Amara got home, she put her star map on the wall next to the picture of her family. She looked up at the moon from her bedroom window again — the same moon, but now she knew so much more about it. She made a promise to the moon: she would study hard, stay curious, and one day, she would visit. The moon glowed back at her, as if it heard." }
+      ]
+    },
+    {
+      "id": "story_008",
+      "title": "The Planet of Colors",
+      "category": "space",
+      "difficulty": "medium",
+      "ageMin": 5, "ageMax": 9,
+      "emoji": "🌈",
+      "color": "#4A90E2",
+      "totalPages": 5,
+      "completionBadge": "Space Explorer 🚀",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🛸", "illustrationBg": "#1A237E", "text": "Far away in a distant galaxy, there was a planet called Chroma — the most colorful place in the universe. One day, a strange gray fog rolled in from space and slowly drained all the color away. The trees turned gray. The sky turned gray. Even the flowers, which had once been every shade imaginable, became gray as ash. The people of Chroma were very, very sad." },
+        { "pageNum": 2, "illustration": "😢", "illustrationBg": "#ECEFF1", "text": "The people sat in their gray houses, eating gray food, wearing gray clothes, looking at gray skies. A little girl named Zoe looked at her hands, which were now the same dull gray as everything else. She remembered how her hands used to be a warm brown, and her dress used to be bright yellow. She decided she would not accept a gray world." },
+        { "pageNum": 3, "illustration": "🎨", "illustrationBg": "#E3F2FD", "text": "Zoe climbed to the highest point on Chroma — a crystal tower at the center of the planet. The scientists there told her the color had been absorbed by the fog and was trapped in a giant cloud above. 'Can we get it back?' Zoe asked. The scientists shook their heads. 'It would take something louder than thunder and brighter than lightning to break the cloud open.'" },
+        { "pageNum": 4, "illustration": "🎵", "illustrationBg": "#E8EAF6", "text": "Zoe had an idea. She ran back to town and gathered everyone together. 'Everyone, sing!' she called. At first, people were too sad to sing. So Zoe started alone, in a small tired voice. Then one person joined. Then another. And soon the whole planet was singing — every person, every voice, every heart together." },
+        { "pageNum": 5, "illustration": "🌈", "illustrationBg": "#E8F5E9", "text": "The sound rose up through the atmosphere and struck the gray cloud like a bell. It cracked, then shattered, and thousands of colors rained down like confetti from the sky. Red and gold and green and violet soaked back into the trees, the flowers, the sky, and the people themselves. Zoe looked at her hands — warm brown again, beautiful and bright. She laughed and cried, and her tears were every color of the rainbow." }
+      ]
+    },
+    {
+      "id": "story_009",
+      "title": "The Little Dolphin's Song",
+      "category": "ocean",
+      "difficulty": "easy",
+      "ageMin": 3, "ageMax": 6,
+      "emoji": "🐬",
+      "color": "#00BCD4",
+      "totalPages": 5,
+      "completionBadge": "Ocean Diver 🌊",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🐬", "illustrationBg": "#E0F7FA", "text": "In the warm blue waters of the Coral Sea, there lived a little dolphin named Luna. All the dolphins in her pod could sing beautiful songs — they used their songs to find each other in the dark water, to warn of danger, and to say 'I love you' to their families. But Luna's song came out all wrong. It was wobbly and squeaky, and the fish swam away when they heard it." },
+        { "pageNum": 2, "illustration": "😔", "illustrationBg": "#B2EBF2", "text": "Luna tried and tried to fix her song. She listened to her mother sing and copied every note. She listened to the whales, whose songs were so deep they shook the ocean floor. She even tried to copy the singing crab, who clicked and clattered in rhythm. But Luna's voice still came out wobbly. 'Maybe I am just not a singer,' she sighed, sinking to the sandy floor of the sea." },
+        { "pageNum": 3, "illustration": "🐠", "illustrationBg": "#E0F7FA", "text": "One day, a small clown fish named Pip swam up to Luna. 'I love your song,' said Pip. Luna looked surprised. 'My song? But it's all wrong.' Pip shook his little orange-striped head. 'It's different,' he said, 'but that's not the same as wrong. When you sing, the sound goes wobbly, and it tickles me right here.' He pressed a fin to his side. 'It makes me laugh.'" },
+        { "pageNum": 4, "illustration": "🎵", "illustrationBg": "#B2EBF2", "text": "Luna thought about this. She had been trying to sing like everyone else when maybe she was supposed to sing like herself. She took a deep breath and opened her mouth. Her song floated out — wobbly, squiggly, up-and-down. And something wonderful happened! All around the coral reef, creatures poked their heads out to listen. Starfish crawled closer. Seahorses drifted over. Even a sleepy sea turtle woke up and smiled." },
+        { "pageNum": 5, "illustration": "🌊", "illustrationBg": "#E0F7FA", "text": "Luna sang all day long. Her pod could hear her song from miles away — not because it was the loudest, but because it was the most unique. Her mother nuzzled her gently. 'I have been searching for your song,' she said. 'I knew the moment I heard it that it was you.' Luna leaped out of the water and clicked with joy. Her song was not wrong. It was wonderfully, perfectly, beautifully hers." }
+      ]
+    },
+    {
+      "id": "story_010",
+      "title": "The Treasure Under the Sea",
+      "category": "ocean",
+      "difficulty": "medium",
+      "ageMin": 5, "ageMax": 8,
+      "emoji": "🐢",
+      "color": "#00BCD4",
+      "totalPages": 6,
+      "completionBadge": "Ocean Diver 🌊",
+      "isBedtime": false,
+      "pages": [
+        { "pageNum": 1, "illustration": "🗺️", "illustrationBg": "#E0F7FA", "text": "Old Shelly the sea turtle was one hundred years old, and she had seen everything the ocean had to offer. One day, a tiny hermit crab named Clio came to her with a faded map. 'I found this tucked inside a sea shell,' said Clio. 'It shows the way to the Greatest Treasure Under the Sea. Will you help me find it, Shelly?' The old turtle looked at the map carefully and nodded." },
+        { "pageNum": 2, "illustration": "🌊", "illustrationBg": "#B2EBF2", "text": "The map led them through the Glowing Kelp Forest, where long ribbons of seaweed lit up green and gold in the dark. They swam past the Humming Rocks, where the current made music. They helped a baby octopus tangled in fishing line, and freed a school of fish trapped in a sunken net. Each time they helped someone, the map seemed to glow a little brighter." },
+        { "pageNum": 3, "illustration": "🌺", "illustrationBg": "#E0F7FA", "text": "The map led them deeper until they reached the edge of a great trench — a crack in the ocean floor so deep it was completely dark. 'The treasure is at the bottom?' Clio asked nervously. Shelly studied the map more carefully. 'No,' she said slowly. 'Look at the path — the map doesn't go down. It goes back.' She turned the map the other way, and the path changed completely." },
+        { "pageNum": 4, "illustration": "🐙", "illustrationBg": "#B2EBF2", "text": "With the map correctly turned, they followed the trail back the way they had come — back past the freed school of fish, back past the little octopus, back through the humming rocks. Everywhere they went, the creatures they had helped were waiting for them. The baby octopus had made them a bouquet of sea flowers. The fish were dancing in their honor." },
+        { "pageNum": 5, "illustration": "💎", "illustrationBg": "#E3F2FD", "text": "When they arrived back at the starting point, there was a glowing chest on the sea floor. It had been there all along, but they had swum right past it at the beginning because they were in such a hurry. Inside the chest, instead of gold or jewels, were hundreds of tiny glowing pearls — each one representing a good deed done in the ocean." },
+        { "pageNum": 6, "illustration": "🌟", "illustrationBg": "#FFF8E1", "text": "Clio picked up a pearl and it glowed warmly in her little claw. Shelly smiled her slow turtle smile. 'The treasure was never at the end of the map,' she said. 'It was in every kind thing you did along the way.' Clio looked at all the creatures gathered around them, all the friends they had made, and understood. The greatest treasure under the sea was not gold. It was goodness." }
+      ]
+    },
+    {
+      "id": "story_011",
+      "title": "The Sleepy Forest",
+      "category": "bedtime",
+      "difficulty": "easy",
+      "ageMin": 3, "ageMax": 6,
+      "emoji": "🌙",
+      "color": "#3F51B5",
+      "totalPages": 5,
+      "completionBadge": "Dreamtime Reader 🌙",
+      "isBedtime": true,
+      "pages": [
+        { "pageNum": 1, "illustration": "🌲", "illustrationBg": "#1A237E", "text": "As the sun slowly sank below the hills, the great forest began to get ready for sleep. The last golden light painted the treetops orange and pink. High in the branches, the sleepy squirrel yawned a big yawn, stretching her bushy tail behind her. She gathered her acorns close, said goodnight to the oak tree, and snuggled deep into her soft mossy nest." },
+        { "pageNum": 2, "illustration": "🐇", "illustrationBg": "#283593", "text": "The little brown rabbit hopped slowly to her burrow. Her ears drooped with sleepiness and her nose twitched as she smelled the cool night air. Her mama rabbit was waiting at the burrow door, ready to tuck her in with the softest leaves. 'Did you play enough today?' asked mama rabbit softly. 'Yes,' said the little rabbit, yawning. Her eyes closed before she even finished the sentence." },
+        { "pageNum": 3, "illustration": "🌿", "illustrationBg": "#1A237E", "text": "The frog stopped croaking and settled onto her lily pad with a contented plop. The fireflies finished their dancing and floated gently down into the tall grass. One by one, each tiny light blinked off, like candles being blown out at bedtime. The stream murmured more softly now, its sound like a quiet lullaby threading through the sleeping trees." },
+        { "pageNum": 4, "illustration": "🦋", "illustrationBg": "#283593", "text": "The butterflies folded their beautiful wings and rested on flower petals. The birds tucked their heads under their wings and breathed slowly. Even the wind grew quiet, as if it too needed to sleep. The forest floor was soft with fallen leaves, and everything smelled of earth and pine and the gentle night. The whole forest breathed in and out together, slowly, peacefully, deeply." },
+        { "pageNum": 5, "illustration": "😴", "illustrationBg": "#0D1B5E", "text": "And now, little one, it is your turn to sleep. You have played, and learned, and laughed today. Your body is soft and warm, just like the sleepy forest. Your eyes are heavy, just like the squirrel's. Take a big, slow breath in... and out... and let the night carry you gently into the sweetest of dreams. The whole forest is sleeping now. Goodnight." }
+      ]
+    },
+    {
+      "id": "story_012",
+      "title": "The Moon's Lullaby",
+      "category": "bedtime",
+      "difficulty": "easy",
+      "ageMin": 3, "ageMax": 7,
+      "emoji": "🌕",
+      "color": "#3F51B5",
+      "totalPages": 5,
+      "completionBadge": "Dreamtime Reader 🌙",
+      "isBedtime": true,
+      "pages": [
+        { "pageNum": 1, "illustration": "🌕", "illustrationBg": "#0D1B5E", "text": "Every night, when the world grew quiet and dark, the Moon rose up into the sky to begin her most important job. Her job was to watch over everyone while they slept, and to sing a lullaby so soft that only sleeping ears could hear it. She polished her silver face until it shone, took a deep breath of star-scented air, and began to hum." },
+        { "pageNum": 2, "illustration": "⭐", "illustrationBg": "#1A237E", "text": "The stars were her helpers. Each one blinked in its own gentle rhythm — some slow, some fast — but all of them together made the night sky feel warm and watchful. One by one, the houses below went dark as children and parents drifted into sleep, warmed by the silver glow of the Moon keeping careful watch over them all." },
+        { "pageNum": 3, "illustration": "🌙", "illustrationBg": "#1A237E", "text": "The Moon hummed over the mountains, and the mountains stood tall and peaceful in their sleep. She hummed over the oceans, and the waves slowed to a gentle rocking. She hummed over the cities and the villages, the forests and the fields. Under her lullaby, all the world became softer, quieter, and still. Even the wind stopped to listen." },
+        { "pageNum": 4, "illustration": "💤", "illustrationBg": "#0D1B5E", "text": "And somewhere, in a cozy room with warm covers and a soft pillow, there was a little child — perhaps very much like you — who was almost asleep. Their breathing had grown slow and even. Their eyes were gently closed. The Moon sent her softest beam through the curtain and laid it like a silver blanket across the child's cheek. 'Sweet dreams,' whispered the Moon." },
+        { "pageNum": 5, "illustration": "🌟", "illustrationBg": "#0D1B5E", "text": "In the morning, you might not remember the Moon's lullaby. But somewhere deep inside you, in the very quietest part of your heart, the music will still be there. It will make you feel safe, and loved, and rested. And tonight, when the Moon rises again, she will look for your window, and hum her song just for you. Sleep well, dear one. Sleep well." }
+      ]
+    }
+  ]
+}
